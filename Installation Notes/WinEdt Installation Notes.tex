@@ -62,20 +62,20 @@ Use a bmp from one previously defined.
 
     \section{Add a New Command}
 Enter the menu setup as shown in \figurename~\ref{fig:entermenusetup}.
-\begin{figure}
-  \centering
-  \includegraphics[width=3in]{entermenusetup}
-  \caption{Enter menu setup.}
-  \label{fig:entermenusetup}
-\end{figure}
+    \begin{figure}
+        \centering
+        \includegraphics[width=3in]{entermenusetup}
+        \caption{Enter menu setup.}
+        \label{fig:entermenusetup}
+    \end{figure}
 
 Double click an entry (as shown in \figurename~\ref{fig:doubleclickmenuitemtoopen} to open it for editing.
-\begin{figure}
-  \centering
-  \includegraphics[width=3in]{doubleclickmenuitemtoopen}
-  \caption{Double click the menu item to open the editor for it.}
-  \label{fig:doubleclickmenuitemtoopen}
-\end{figure}
+    \begin{figure}
+        \centering
+        \includegraphics[width=3in]{doubleclickmenuitemtoopen}
+        \caption{Double click the menu item to open the editor for it.}
+        \label{fig:doubleclickmenuitemtoopen}
+    \end{figure}
 
 Setup all the highlighted sections in \figurename~\ref{fig:commandsetup}.  The commands to use are below.
     \begin{plainlist}
@@ -101,21 +101,38 @@ Setup all the highlighted sections in \figurename~\ref{fig:commandsetup}.  The c
         \end{plainlist}
     \end{plainlist}
 
-\begin{figure}
-  \centering
-  \includegraphics[width=3in]{commandsetup}
-  \caption{Ensure all the highlighted sections are set correctly.}
-  \label{fig:commandsetup}
-\end{figure}
-
-
-
-
+    \begin{figure}
+        \centering
+        \includegraphics[width=3in]{commandsetup}
+        \caption{Ensure all the highlighted sections are set correctly.}
+        \label{fig:commandsetup}
+    \end{figure}
 
 
     \chapter{WinEdt v10 and Above}
+    \section{Options Interface}
+In version 10 and above the procedure has changed.  Every thing is accessed through the \textit{Options Interface}.  Right click on the toolbar and select the button for it (see \figurename~\ref{}
+    \begin{figure}
+      \centering
+      \includegraphics[width=3.25in]{openingoptionsinterface}
+      \caption{Opening the \textit{Options Interface} panel.}
+      \label{fig:openingoptionsinterface}
+    \end{figure}
+
+    \begin{figure}
+      \centering
+      \includegraphics[width=2.25in]{optionsinterface}
+      \caption{The \textit{Options Interface} panel.}
+      \label{fig:optionsinterface}
+    \end{figure}
+
 
     \section{Add Menu Items}
+    \begin{numberedlist}
+        \item Open the \textit{Main Menu} document from the \textit{Options Interface} panel.
+        \item Search for \codetext{"TeX\_Menu"}.
+        \item Under it, add the following:
+    \end{numberedlist}
     \begin{plainlist}
         \item \codetext{ITEM="Make\_Document"}
         \begin{plainlist}
@@ -153,22 +170,22 @@ Setup all the highlighted sections in \figurename~\ref{fig:commandsetup}.  The c
 Right click on toolbar
 Find the line:
     \begin{plainlist}
-      \item \codetext{BUTTON="Save"}
+        \item \codetext{BUTTON="Save"}
     \end{plainlist}
 
 and just below it add:
     \begin{plainlist}
-      \item \codetext{BUTTON="Save\_All"}
+        \item \codetext{BUTTON="Save\_All"}
     \end{plainlist}
 
     \subsection{Custom Processing Buttons}
 Go to the end of the main toolbar entry and add the following lines:
     \begin{plainlist}
-      \item \codetext{BUTTON="|"}
-      \item \codetext{BUTTON="Make\_Document"}
-      \item \codetext{BUTTON="Clean\_Temp\_Files"}
-      \item \codetext{BUTTON="Clean\_All\_Output"}
-      \item \codetext{BUTTON="Convert\_All\_Images"}
+        \item \codetext{BUTTON="|"}
+        \item \codetext{BUTTON="Make\_Document"}
+        \item \codetext{BUTTON="Clean\_Temp\_Files"}
+        \item \codetext{BUTTON="Clean\_All\_Output"}
+        \item \codetext{BUTTON="Convert\_All\_Images"}
     \end{plainlist}
     
     \subsection{Templates}
