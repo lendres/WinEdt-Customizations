@@ -5,36 +5,36 @@
 1
 WinEdt Installation Notes.tex
 11
-3
-1
+4
+0
 
 WinEdt Installation Notes.tex
 TeX
-135278523 0 -1 7021 -1 4689 0 0 1319 583 0 1 37 -699 -1 0 0 255 0 -1 -1 2 1 0 4689 -1  0 -1 0
-:\Custom Program Files\LaTeX\TeX\LaTeX\lecode.sty
-TeX:STY
-269496306 0 0 1 0 1 0 0 1066 431 1 0 71 0 -1 -1 0 0 25 0 0 25 1 0 1 0  0 0 0
+403713979 0 -1 7955 -1 7479 0 0 1319 583 0 1 135 416 -1 0 0 255 0 -1 -1 2 1 0 7479 -1  0 -1 0
+:\Users\lance.endres\AppData\Roaming\WinEdt Team\WinEdt 11\ConfigEx\Preferences.ini
+DATA:INI:EDT
+1049594 1 62 27 62 1 0 0 1046 419 1 1 86 320 -1 -1 0 0 -1 -1 -1 -1 1 0 1 62  0 0 0
+:\Users\lance.endres\WinEdt Team\WinEdt 11\Templates\LaTeX\Figure.ltx
+TeX
+1060859 1 -1 0 -1 104 130 130 1098 731 1 1 198 80 -1 -1 0 0 15 -1 -1 15 1 0 104 -1  0 -1 0
 :\Custom Program Files\LaTeX\TeX\LaTeX\lelists.sty
 TeX:STY
 1060850 1 86 17 86 26 182 182 1248 613 1 0 246 240 -1 -1 0 0 14 0 0 14 1 0 26 86  0 0 0
-:\Users\lance.endres\WinEdt Team\WinEdt 11\Templates\LaTeX\Figure.ltx
+:\Custom Program Files\WinEdt\src V10 and Above\Figure.ltx
 TeX
-269496315 1 -1 136 -1 0 130 130 1098 731 1 1 86 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1  0 -1 0
+269496315 1 -1 17 -1 88 52 52 1124 483 1 1 219 64 -1 -1 0 0 15 -1 -1 15 1 0 88 -1  0 -1 0
+:\Custom Program Files\LaTeX\TeX\LaTeX\lecode.sty
+TeX:STY
+269496306 0 0 1 0 1 0 0 1066 431 1 0 71 -1296 -1 -1 0 0 25 0 0 25 1 0 1 0  0 0 0
 :\Users\lance.endres\AppData\Roaming\WinEdt Team\WinEdt 11\ConfigEx\Toolbar.ini
 DATA:INI:EDT
 269485050 0 386 32 382 1 104 104 1066 705 1 1 86 288 -1 -1 0 0 83 0 0 83 1 0 1 382  0 -1 0
 :\Users\lance.endres\AppData\Roaming\WinEdt Team\WinEdt 11\ConfigEx\MainMenu.ini
 DATA:INI:EDT
 269485050 0 3515 1 3523 54 156 156 1118 757 1 1 457 176 -1 -1 0 0 83 0 0 83 1 0 54 3523  0 -1 0
-:\Custom Program Files\WinEdt\src V10 and Above\Figure.ltx
-TeX
-269496315 0 -1 0 -1 134 52 52 1124 483 1 1 198 80 -1 -1 0 0 -1 -1 -1 -1 1 0 134 -1  0 -1 0
 :\Users\lance.endres\WinEdt Team\WinEdt 11\Menus\Insert\Image.edt
 ASCII:EDT
 269494266 1 19 39 19 13 104 104 1072 705 1 0 155 304 -1 -1 0 0 -1 -1 -1 -1 1 0 13 19  0 0 0
-:\Users\lance.endres\AppData\Roaming\WinEdt Team\WinEdt 11\ConfigEx\Images.ini
-DATA:INI:EDT
-269485050 0 0 1 0 1 130 130 1202 561 1 1 86 -2544 -1 -1 0 0 83 0 0 83 1 0 1 0  0 -1 0
 :\Users\lance.endres\WinEdt Team\WinEdt 11\ConfigEx\Images.ini
 DATA:INI:EDT
 303039482 0 0 1 0 1 182 182 1254 613 1 1 86 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 -1 0

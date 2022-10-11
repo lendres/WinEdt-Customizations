@@ -111,99 +111,102 @@ Setup all the highlighted sections in \figurename~\ref{fig:commandsetup}.  The c
 
     \chapter{WinEdt v10 and Above}
     \section{Options Interface}
-In version 10 and above the procedure has changed.  Every thing is accessed through the \textit{Options Interface}.  Right click on the toolbar and select the button for it (see \figurename~\ref{}
+In version 10 and above the procedure has changed.  Every thing is accessed through the \textit{Options Interface}.  Right click on the toolbar and select the button for it (see \figurename~\ref{fig:openingoptionsinterface}).  The \textit{Options Interface} is shown in \figurename~\ref{fig:optionsinterface}.
     \begin{figure}
-      \centering
-      \includegraphics[width=3.25in]{openingoptionsinterface}
-      \caption{Opening the \textit{Options Interface} panel.}
-      \label{fig:openingoptionsinterface}
+		\centering
+		\includegraphics[width=3.25in]{openingoptionsinterface}
+		\caption{Opening the \textit{Options Interface} panel.}
+		\label{fig:openingoptionsinterface}
     \end{figure}
 
     \begin{figure}
-      \centering
-      \includegraphics[width=2.25in]{optionsinterface}
-      \caption{The \textit{Options Interface} panel.}
-      \label{fig:optionsinterface}
+		\centering
+		\includegraphics[width=2.25in]{optionsinterface}
+		\caption{The \textit{Options Interface} panel.}
+		\label{fig:optionsinterface}
     \end{figure}
 
 
-    \section{Add Menu Items}
-    \begin{numberedlist}
-        \item Open the \textit{Main Menu} document from the \textit{Options Interface} panel.
-        \item Search for \codetext{"TeX\_Menu"}.
-        \item Under it, add the following:
-    \end{numberedlist}
-    \begin{plainlist}
-        \item \codetext{ITEM="Make\_Document"}
-        \begin{plainlist}
-            \item \codetext{CAPTION="Make Document"}
-            \item \codetext{IMAGE="TeXTeXif"}
-            \item \codetext{SAVE\_INPUT=1}
-            \item \codetext{MACRO="Run('\%P\tbs{}run\_make\_document.bat ""\%N""','\%P',0,0,'Make Document',1,1);"}
-            \item \codetext{REQ\_FILTER=:"\%!M=TeX"|"\%!M=TeX:STY"|"\%!M=TeX:AUX"}
-        \end{plainlist}
-        \item \codetext{ITEM="Clean\_Temp\_Files"}
-        \begin{plainlist}
-            \item \codetext{CAPTION="Delete Temporary Files"}
-            \item \codetext{IMAGE="Recycle"}
-            \item \codetext{SAVE\_INPUT=1}
-            \item \codetext{MACRO="Run('clean\_temp\_files.bat','\%P',0,0,'Clean Temp Files',1,1);"}
-        \end{plainlist}
-        \item \codetext{ITEM="Clean\_All\_Output"}
-        \begin{plainlist}
-            \item \codetext{CAPTION="Delete All Output Files"}
-            \item \codetext{IMAGE="Recycle"}
-            \item \codetext{SAVE\_INPUT=1}
-            \item \codetext{MACRO="Run('clean\_all\_output.bat','\%P',0,0,'Clean All Output Files',1,1);"}
-        \end{plainlist}
-        \item \codetext{ITEM="Convert\_All\_Images"}
-        \begin{plainlist}
-            \item \codetext{CAPTION="Convert All Images"}
-            \item \codetext{IMAGE="Image"}
-            \item \codetext{SAVE\_INPUT=1}
-            \item \codetext{MACRO="Run('convert\_all\_images.bat','\%P\tbs{}Figures\tbs{}Image Sources',0,0,'Convert All Images',1,1);"}
-        \end{plainlist}
-    \end{plainlist}
+	\section{Add Menu Items}
+	\begin{numberedlist}
+		\item Open the \textit{Main Menu} document from the \textit{Options Interface} panel.
+		\item Search for \codetext{"TeX\_Menu"}.
+		\item Under it, add the following:
+	\end{numberedlist}
+	\begin{plainlist}
+		\item \codetext{ITEM="Make\_Document"}
+		\begin{plainlist}
+			\item \codetext{CAPTION="Make Document"}
+			\item \codetext{IMAGE="TeXTeXif"}
+			\item \codetext{SAVE\_INPUT=1}
+			\item \codetext{MACRO="Run('\%P\tbs{}run\_make\_document.bat ""\%N""','\%P',0,0,'Make Document',1,1);"}
+			\item \codetext{REQ\_FILTER=:"\%!M=TeX"|"\%!M=TeX:STY"|"\%!M=TeX:AUX"}
+		\end{plainlist}
+		\item \codetext{ITEM="Clean\_Temp\_Files"}
+		\begin{plainlist}
+			\item \codetext{CAPTION="Delete Temporary Files"}
+			\item \codetext{IMAGE="Recycle"}
+			\item \codetext{SAVE\_INPUT=1}
+			\item \codetext{MACRO="Run('clean\_temp\_files.bat','\%P',0,0,'Clean Temp Files',1,1);"}
+		\end{plainlist}
+		\item \codetext{ITEM="Clean\_All\_Output"}
+		\begin{plainlist}
+			\item \codetext{CAPTION="Delete All Output Files"}
+			\item \codetext{IMAGE="Recycle"}
+			\item \codetext{SAVE\_INPUT=1}
+			\item \codetext{MACRO="Run('clean\_all\_output.bat','\%P',0,0,'Clean All Output Files',1,1);"}
+		\end{plainlist}
+		\item \codetext{ITEM="Convert\_All\_Images"}
+		\begin{plainlist}
+			\item \codetext{CAPTION="Convert All Images"}
+			\item \codetext{IMAGE="Image"}
+			\item \codetext{SAVE\_INPUT=1}
+			\item \codetext{MACRO="Run('convert\_all\_images.bat','\%P\tbs{}Figures\tbs{}Image Sources',0,0,'Convert All Images',1,1);"}
+		\end{plainlist}
+	\end{plainlist}
 
-    \section{Add Toolbar Buttons}
-    \subsection{Add \textit{Save All}}
+	\section{Add Toolbar Buttons}
+	\subsection{Add \textit{Save All}}
 Right click on toolbar
 Find the line:
-    \begin{plainlist}
-        \item \codetext{BUTTON="Save"}
-    \end{plainlist}
+	\begin{plainlist}
+		\item \codetext{BUTTON="Save"}
+	\end{plainlist}
 
 and just below it add:
-    \begin{plainlist}
-        \item \codetext{BUTTON="Save\_All"}
-    \end{plainlist}
+	\begin{plainlist}
+		\item \codetext{BUTTON="Save\_All"}
+	\end{plainlist}
 
-    \subsection{Custom Processing Buttons}
+	\subsection{Custom Processing Buttons}
 Go to the end of the main toolbar entry and add the following lines:
-    \begin{plainlist}
-        \item \codetext{BUTTON="|"}
-        \item \codetext{BUTTON="Make\_Document"}
-        \item \codetext{BUTTON="Clean\_Temp\_Files"}
-        \item \codetext{BUTTON="Clean\_All\_Output"}
-        \item \codetext{BUTTON="Convert\_All\_Images"}
-    \end{plainlist}
-    
-    \subsection{Templates}
+	\begin{plainlist}
+		\item \codetext{BUTTON="|"}
+		\item \codetext{BUTTON="Make\_Document"}
+		\item \codetext{BUTTON="Clean\_Temp\_Files"}
+		\item \codetext{BUTTON="Clean\_All\_Output"}
+		\item \codetext{BUTTON="Convert\_All\_Images"}
+	\end{plainlist}
+
+	\subsection{Templates}
 Open the file:
 \codetext{\%b\tbs{}Templates\tbs{}LaTeX\tbs{}Figure.ltx}
+E.g.:
+\codetext{C:\tbs{}Users\tbs{}lance.endres\tbs{}WinEdt Team\tbs{}WinEdt 11\tbs{}Templates\LaTeX\tbs{}Figure.ltx}
 
-and edit it to read:
-    \begin{plainlist}
-        \item \codetext{\tbs{}begin\{figure\}}
-        \begin{plainlist}
-            \item \codetext{\tbs{}centering}
-            \item \codetext{\tbs{}includegraphics[width=]\{\}}
-            \item \codetext{\tbs{}caption\{\}}
-            \item \codetext{\tbs{}label\{fig:\}}
-        \end{plainlist}
-        \item \codetext{\tbs{}end\{figure\}}
-    \end{plainlist}
+and replace its contents with the one found in the file:
+\codetext{C:\tbs{}Custom Program Files\tbs{}WinEdt\tbs{}src V10 and Above}
 
-
+	\subsection{Running Multiple Instances}
+	\begin{numberedlist}
+		\item Select the \codetext{Additional Preferences} section of the \codetext{Application: ...} as shown in \figurename~\ref{fig:additionalpreferences}.
+		\item Change the line \codetext{RUN\_ONE\_INSTANCE\_ONLY=1} to \codetext{RUN\_ONE\_INSTANCE\_ONLY=0}.
+	\end{numberedlist}
+	\begin{figure}
+		\centering
+		\includegraphics[width=2.5in]{additionalpreferences}
+		\caption{The location of \codetext{Additional Preferences} on the \textit{Options Interface} panel.}
+		\label{fig:additionalpreferences}
+	\end{figure}
 
 	\end{document} 
