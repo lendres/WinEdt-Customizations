@@ -5,15 +5,18 @@
 1
 WinEdt Installation Notes.tex
 11
-4
+5
 0
 
 WinEdt Installation Notes.tex
 TeX
-403713979 0 -1 7955 -1 7479 0 0 1319 583 0 1 135 416 -1 0 0 255 0 -1 -1 2 1 0 7479 -1  0 -1 0
+403713979 0 -1 471 -1 193 0 0 1319 583 0 1 205 112 -1 0 0 255 0 -1 -1 2 1 0 193 -1  0 -1 0
+:\Users\lance.endres\AppData\Roaming\WinEdt Team\WinEdt 11\ConfigEx\MainMenu.ini
+DATA:INI:EDT
+1049594 1 4077 27 4077 5 156 156 1118 757 1 1 114 576 -1 -1 0 0 83 0 0 83 1 0 5 4077  0 -1 0
 :\Users\lance.endres\AppData\Roaming\WinEdt Team\WinEdt 11\ConfigEx\Preferences.ini
 DATA:INI:EDT
-1049594 1 62 27 62 1 0 0 1046 419 1 1 86 320 -1 -1 0 0 -1 -1 -1 -1 1 0 1 62  0 0 0
+1049594 1 62 27 62 1 0 0 1046 419 1 1 86 320 -1 -1 0 0 83 0 0 83 1 0 1 62  0 0 0
 :\Users\lance.endres\WinEdt Team\WinEdt 11\Templates\LaTeX\Figure.ltx
 TeX
 1060859 1 -1 0 -1 104 130 130 1098 731 1 1 198 80 -1 -1 0 0 15 -1 -1 15 1 0 104 -1  0 -1 0
@@ -29,9 +32,6 @@ TeX:STY
 :\Users\lance.endres\AppData\Roaming\WinEdt Team\WinEdt 11\ConfigEx\Toolbar.ini
 DATA:INI:EDT
 269485050 0 386 32 382 1 104 104 1066 705 1 1 86 288 -1 -1 0 0 83 0 0 83 1 0 1 382  0 -1 0
-:\Users\lance.endres\AppData\Roaming\WinEdt Team\WinEdt 11\ConfigEx\MainMenu.ini
-DATA:INI:EDT
-269485050 0 3515 1 3523 54 156 156 1118 757 1 1 457 176 -1 -1 0 0 83 0 0 83 1 0 54 3523  0 -1 0
 :\Users\lance.endres\WinEdt Team\WinEdt 11\Menus\Insert\Image.edt
 ASCII:EDT
 269494266 1 19 39 19 13 104 104 1072 705 1 0 155 304 -1 -1 0 0 -1 -1 -1 -1 1 0 13 19  0 0 0

@@ -5,15 +5,17 @@
     \setlength{\leftlistindent}{0pt}
     \setlength{\rightlistindent}{0pt}
 
+    \usepackage{lefonts}
     \usepackage{lecode}
     \usepackage{legraphicextensions}
     \graphicspath{{Figures/}}
 
     \usepackage{lesubscripts}
-    \usepackage{lehyperlink}
+    \usepackage[pdfauthor={Lance A. Endres}, pdftitle={WinEdt Installation Notes, colorlinks}]{lehyperlink}
     \usepackage{leheadersandfooters}
 
     \usepackage{leaddress}
+
     \usepackage{times}
 
     \newcommand{\tbs}{$\backslash$}
@@ -208,5 +210,15 @@ and replace its contents with the one found in the file:
 		\caption{The location of \codetext{Additional Preferences} on the \textit{Options Interface} panel.}
 		\label{fig:additionalpreferences}
 	\end{figure}
+
+
+	\subsection{Keyboard Shortcuts}
+For some keyboard shortcuts, Windows intercepts them and they do not reach WinEdt.  This is because WinEdt uses the MDI interface.  To remap toggling of tabs, download and install \codetext{PowerToys}.
+	\begin{plainlist}
+		\item \href{https://github.com/microsoft/PowerToys}{PowerToys on Github}
+	\end{plainlist}
+
+Add a keyboard shortcut to remap \codetext{Ctrl+Tab} to \codetext{Shift+F2} for \codetext{WinEdt}
+Delete the \codetext{Ctrl+Tab} shortcut from the \codetext{ITEM="Next\_MDI\_Window"} entry.
 
 	\end{document} 
