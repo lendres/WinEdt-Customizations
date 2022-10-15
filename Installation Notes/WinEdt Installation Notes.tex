@@ -6,7 +6,10 @@
     \setlength{\rightlistindent}{0pt}
 
     \usepackage{lefonts}
+    \usepackage{lefontsizes}
     \usepackage{lecode}
+    \codefontsize{\small}
+    
     \usepackage{legraphicextensions}
     \graphicspath{{Figures/}}
 
@@ -30,7 +33,7 @@
     \chapter{Additional Information}
 See the following directory for additional installation requirements.
     \begin{plainlist}
-        \item \codetext{C:\tbs{}Custom Program Files\tbs{}LaTeX\tbs{}Processing Support\tbs{}Notes\tbs{}}
+        \item \textcode{C:\tbs{}Custom Program Files\tbs{}LaTeX\tbs{}Processing Support\tbs{}Notes\tbs{}}
     \end{plainlist}
 
 
@@ -39,16 +42,16 @@ See the following directory for additional installation requirements.
     \section{Adding a Custom Button}
 
     \begin{numberedlist}
-        \item Open: \codetext{Options$\rightarrow{}$Preferences$\rightarrow{}$Advanced}
+        \item Open: \textcode{Options$\rightarrow{}$Preferences$\rightarrow{}$Advanced}
 
-        \item Edit the \codetext{WinEdt.btn} file as shown in \figurename~\ref{fig:addcustombutton}.
+        \item Edit the \textcode{WinEdt.btn} file as shown in \figurename~\ref{fig:addcustombutton}.
 
         \item Add a line to the end of the file similar to:
             \begin{plainlist}
-                \item \codetext{204 \%B\tbs{}Bitmaps\tbs{}Buttons\tbs{}Command Prompt.bmp}
-                \item \codetext{205 \%B\tbs{}Bitmaps\tbs{}Buttons\tbs{}Recycle.bmp}
-                \item \codetext{206 \%B\tbs{}Bitmaps\tbs{}Buttons\tbs{}Recycle.bmp}
-                \item \codetext{207 \%B\tbs{}Bitmaps\tbs{}Buttons\tbs{}image.bmp}
+                \item \textcode{204 \%B\tbs{}Bitmaps\tbs{}Buttons\tbs{}Command Prompt.bmp}
+                \item \textcode{205 \%B\tbs{}Bitmaps\tbs{}Buttons\tbs{}Recycle.bmp}
+                \item \textcode{206 \%B\tbs{}Bitmaps\tbs{}Buttons\tbs{}Recycle.bmp}
+                \item \textcode{207 \%B\tbs{}Bitmaps\tbs{}Buttons\tbs{}image.bmp}
             \end{plainlist}
     \end{numberedlist}
 The number in that line will be the button number is the toolbar setup.
@@ -56,7 +59,7 @@ Use a bmp from one previously defined.
     \begin{figure}
       \centering
       \includegraphics[width=3in]{addcustombutton}
-      \caption{Edit the \codetext{WinEdt.btn}}
+      \caption{Edit the \textcode{WinEdt.btn}}
       \label{fig:addcustombutton}
     \end{figure}
 
@@ -83,23 +86,23 @@ Setup all the highlighted sections in \figurename~\ref{fig:commandsetup}.  The c
     \begin{plainlist}
         \item Make Document
         \begin{plainlist}
-            \item Macro:    \codetext{Run('run\_make\_document.bat "\%N"','',0,0,'Make Document',1,1);}
-            \item Start in: \codetext{\%P}
+            \item Macro:    \textcode{Run('run\_make\_document.bat "\%N"','',0,0,'Make Document',1,1);}
+            \item Start in: \textcode{\%P}
         \end{plainlist}
         \item Clean Temp Files
         \begin{plainlist}
-            \item Macro:    \codetext{Run('clean\_temp\_files.bat','',0,0,'Clean Up',1,1);}
-            \item Start in: \codetext{\%P}
+            \item Macro:    \textcode{Run('clean\_temp\_files.bat','',0,0,'Clean Up',1,1);}
+            \item Start in: \textcode{\%P}
         \end{plainlist}
         \item Clean All Output
         \begin{plainlist}
-            \item Macro:    \codetext{Run('clean\_all\_output.bat','',0,0,'Clean Up',1,1);}
-            \item Start in: \codetext{\%P}
+            \item Macro:    \textcode{Run('clean\_all\_output.bat','',0,0,'Clean Up',1,1);}
+            \item Start in: \textcode{\%P}
         \end{plainlist}
         \item Convert All Images
         \begin{plainlist}
-            \item Macro:    \codetext{Run('convert\_all\_images.bat','',0,0,'Make Images',1,1);}
-            \item Start in: \codetext{\%P\tbs{}Figures\tbs{}Image Sources\tbs{}}
+            \item Macro:    \textcode{Run('convert\_all\_images.bat','',0,0,'Make Images',1,1);}
+            \item Start in: \textcode{\%P\tbs{}Figures\tbs{}Image Sources\tbs{}}
         \end{plainlist}
     \end{plainlist}
 
@@ -130,40 +133,55 @@ In version 10 and above the procedure has changed.  Every thing is accessed thro
 
 
 	\section{Add Menu Items}
+
 	\begin{numberedlist}
 		\item Open the \textit{Main Menu} document from the \textit{Options Interface} panel.
-		\item Search for \codetext{"TeX\_Menu"}.
-		\item Under it, add the following:
+        \item Open the file: \textcode{.\\src V10 and Above\\MainMenu.ini}
+        \item Copy the contents from the installation notes directory file into the \textit{WinEdt} menu file.
 	\end{numberedlist}
+
+	\begin{bulletedlist}
+		\item The new items are under the section: \textcode{"TeX\_Menu"}.
+		\item They are shown below, for reference.
+	\end{bulletedlist}
 	\begin{plainlist}
-		\item \codetext{ITEM="Make\_Document"}
+		\item \textcode{ITEM="Make\_Document"}
 		\begin{plainlist}
-			\item \codetext{CAPTION="Make Document"}
-			\item \codetext{IMAGE="TeXTeXif"}
-			\item \codetext{SAVE\_INPUT=1}
-			\item \codetext{MACRO="Run('\%P\tbs{}run\_make\_document.bat ""\%N""','\%P',0,0,'Make Document',1,1);"}
-			\item \codetext{REQ\_FILTER=:"\%!M=TeX"|"\%!M=TeX:STY"|"\%!M=TeX:AUX"}
+			\item \textcode{CAPTION="Make Document"}
+			\item \textcode{IMAGE="TeXTeXif"}
+			\item \textcode{SAVE\_INPUT=1}
+			\item \textcode{MACRO="Run('\%P\tbs{}run\_make\_document.bat ""\%N""','\%P',0,0,"}
+			\begin{plainlist}
+				\item \textcode{'Make Document',1,1);"}
+			\end{plainlist}
+			\item \textcode{REQ\_FILTER=:"\%!M=TeX"|"\%!M=TeX:STY"|"\%!M=TeX:AUX"}
 		\end{plainlist}
-		\item \codetext{ITEM="Clean\_Temp\_Files"}
+		\item \textcode{ITEM="Clean\_Temp\_Files"}
 		\begin{plainlist}
-			\item \codetext{CAPTION="Delete Temporary Files"}
-			\item \codetext{IMAGE="Recycle"}
-			\item \codetext{SAVE\_INPUT=1}
-			\item \codetext{MACRO="Run('clean\_temp\_files.bat','\%P',0,0,'Clean Temp Files',1,1);"}
+			\item \textcode{CAPTION="Delete Temporary Files"}
+			\item \textcode{IMAGE="Recycle"}
+			\item \textcode{SAVE\_INPUT=1}
+			\item \textcode{MACRO="Run('clean\_temp\_files.bat','\%P',0,0,'Clean Temp Files',1,1);"}
 		\end{plainlist}
-		\item \codetext{ITEM="Clean\_All\_Output"}
+		\item \textcode{ITEM="Clean\_All\_Output"}
 		\begin{plainlist}
-			\item \codetext{CAPTION="Delete All Output Files"}
-			\item \codetext{IMAGE="Recycle"}
-			\item \codetext{SAVE\_INPUT=1}
-			\item \codetext{MACRO="Run('clean\_all\_output.bat','\%P',0,0,'Clean All Output Files',1,1);"}
+			\item \textcode{CAPTION="Delete All Output Files"}
+			\item \textcode{IMAGE="Recycle"}
+			\item \textcode{SAVE\_INPUT=1}
+			\item \textcode{MACRO="Run('clean\_all\_output.bat','\%P',0,0,"}
+			\begin{plainlist}
+				\item \textcode{'Clean All Output Files',1,1);"}
+			\end{plainlist}
 		\end{plainlist}
-		\item \codetext{ITEM="Convert\_All\_Images"}
+		\item \textcode{ITEM="Convert\_All\_Images"}
 		\begin{plainlist}
-			\item \codetext{CAPTION="Convert All Images"}
-			\item \codetext{IMAGE="Image"}
-			\item \codetext{SAVE\_INPUT=1}
-			\item \codetext{MACRO="Run('convert\_all\_images.bat','\%P\tbs{}Figures\tbs{}Image Sources',0,0,'Convert All Images',1,1);"}
+			\item \textcode{CAPTION="Convert All Images"}
+			\item \textcode{IMAGE="Image"}
+			\item \textcode{SAVE\_INPUT=1}
+			\item \textcode{MACRO="Run('convert\_all\_images.bat','\%P\tbs{}Figures\tbs{}Image Sources',"}
+			\begin{plainlist}
+				\item \textcode{0,0,'Convert All Images',1,1);"}
+			\end{plainlist}
 		\end{plainlist}
 	\end{plainlist}
 
@@ -172,53 +190,63 @@ In version 10 and above the procedure has changed.  Every thing is accessed thro
 Right click on toolbar
 Find the line:
 	\begin{plainlist}
-		\item \codetext{BUTTON="Save"}
+		\item \textcode{BUTTON="Save"}
 	\end{plainlist}
 
 and just below it add:
 	\begin{plainlist}
-		\item \codetext{BUTTON="Save\_All"}
+		\item \textcode{BUTTON="Save\_All"}
 	\end{plainlist}
 
 	\subsection{Custom Processing Buttons}
 Go to the end of the main toolbar entry and add the following lines:
 	\begin{plainlist}
-		\item \codetext{BUTTON="|"}
-		\item \codetext{BUTTON="Make\_Document"}
-		\item \codetext{BUTTON="Clean\_Temp\_Files"}
-		\item \codetext{BUTTON="Clean\_All\_Output"}
-		\item \codetext{BUTTON="Convert\_All\_Images"}
+		\item \textcode{BUTTON="|"}
+		\item \textcode{BUTTON="Make\_Document"}
+		\item \textcode{BUTTON="Clean\_Temp\_Files"}
+		\item \textcode{BUTTON="Clean\_All\_Output"}
+		\item \textcode{BUTTON="Convert\_All\_Images"}
 	\end{plainlist}
 
-	\subsection{Templates}
-Open the file:
-\codetext{\%b\tbs{}Templates\tbs{}LaTeX\tbs{}Figure.ltx}
-E.g.:
-\codetext{C:\tbs{}Users\tbs{}lance.endres\tbs{}WinEdt Team\tbs{}WinEdt 11\tbs{}Templates\LaTeX\tbs{}Figure.ltx}
+	\section{Templates}
+    \begin{numberedlist}
+        \item Open the location: \textcode{\%b\tbs{}Templates\tbs{}LaTeX\tbs{}Figure.ltx}.  Example locations are:
+        \begin{plainlist}
+            \item \textcode{C:\tbs{}Users\tbs{}lance\tbs{}WinEdt Team\tbs{}WinEdt 11\tbs{}Templates\tbs{}LaTeX\tbs{}Figure.ltx}
+            \item \textcode{C:\tbs{}Program Files\tbs{}WinEdt Team\tbs{}WinEdt 11\tbs{}Templates\tbs{}LaTeX\tbs{}Figure.ltx}
+        \end{plainlist}
+        \item Overwrite the files in that directory with the ones from:
+        \begin{plainlist}
+            \item \textcode{C:\tbs{}Custom Program Files\tbs{}WinEdt\tbs{}src V10 and Above\tbs{}Templates}
+        \end{plainlist}
+    \end{numberedlist}
 
-and replace its contents with the one found in the file:
-\codetext{C:\tbs{}Custom Program Files\tbs{}WinEdt\tbs{}src V10 and Above}
-
-	\subsection{Running Multiple Instances}
+	\section{Running Multiple Instances}
 	\begin{numberedlist}
-		\item Select the \codetext{Additional Preferences} section of the \codetext{Application: ...} as shown in \figurename~\ref{fig:additionalpreferences}.
-		\item Change the line \codetext{RUN\_ONE\_INSTANCE\_ONLY=1} to \codetext{RUN\_ONE\_INSTANCE\_ONLY=0}.
+		\item Select the \textcode{Additional Preferences} section of the \textcode{Application: ...} as shown in \figurename~\ref{fig:additionalpreferences}.
+		\item Change the line \textcode{RUN\_ONE\_INSTANCE\_ONLY=1} to \textcode{RUN\_ONE\_INSTANCE\_ONLY=0}.
 	\end{numberedlist}
 	\begin{figure}
 		\centering
 		\includegraphics[width=2.5in]{additionalpreferences}
-		\caption{The location of \codetext{Additional Preferences} on the \textit{Options Interface} panel.}
+		\caption{The location of \textcode{Additional Preferences} on the \textit{Options Interface} panel.}
 		\label{fig:additionalpreferences}
 	\end{figure}
 
 
-	\subsection{Keyboard Shortcuts}
-For some keyboard shortcuts, Windows intercepts them and they do not reach WinEdt.  This is because WinEdt uses the MDI interface.  To remap toggling of tabs, download and install \codetext{PowerToys}.
+	\section{Keyboard Shortcuts}
+For some keyboard shortcuts, Windows intercepts them and they do not reach WinEdt.  This is because WinEdt uses the MDI interface.  To remap toggling of tabs, download and install \textcode{PowerToys}.
 	\begin{plainlist}
 		\item \href{https://github.com/microsoft/PowerToys}{PowerToys on Github}
 	\end{plainlist}
 
-Add a keyboard shortcut to remap \codetext{Ctrl+Tab} to \codetext{Shift+F2} for \codetext{WinEdt}
-Delete the \codetext{Ctrl+Tab} shortcut from the \codetext{ITEM="Next\_MDI\_Window"} entry.
+Add a keyboard shortcut to remap \textcode{Ctrl+Tab} to \textcode{Shift+F2} for \textcode{WinEdt}
+Delete the \textcode{Ctrl+Tab} shortcut from the \textcode{ITEM="Next\_MDI\_Window"} entry.
+
+	\section{Tabs}
+    \begin{numberedlist}
+    	\item \textcode{Options$\rightarrow$Preferences$\rightarrow$Tabs}
+    	\item Check \textit{Allow Keyboard Tabs}
+    \end{numberedlist}
 
 	\end{document} 

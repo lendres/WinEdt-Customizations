@@ -27,6 +27,7 @@
 *.gls
 *.glsdefs
 *.synctex
+*.synctex(busy)
 
 # Files
 Archive/
