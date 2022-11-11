@@ -4,40 +4,22 @@
 1
 1
 WinEdt Installation Notes.tex
-11
+5
 3
 0
 
 WinEdt Installation Notes.tex
 TeX
-420491195 0 -1 9710 -1 8420 0 0 1319 583 0 1 72 160 -1 0 0 255 0 -1 -1 2 1 0 8420 -1  0 -1 0
+420491195 0 -1 9710 -1 8474 0 0 1319 583 0 1 205 176 -1 0 0 255 0 -1 -1 2 1 0 8474 -1  0 -1 0
 :\Custom Program Files\LaTeX\TeX\LaTeX\lecode.sty
 TeX:STY
 1060850 1 14 13 14 26 0 0 1066 431 1 0 246 224 -1 -1 0 0 25 0 0 25 1 0 26 14  0 0 0
 :\Custom Program Files\LaTeX\TeX\LaTeX\lefontsizes.sty
 TeX:STY
-1060850 0 15 25 15 21 78 78 1098 562 1 0 211 240 -1 -1 0 0 -1 -1 -1 -1 1 0 21 15  0 0 0
+1060850 0 15 25 15 21 78 78 1098 562 1 0 211 240 -1 -1 0 0 25 0 0 25 1 0 21 15  0 0 0
 :\Custom Program Files\LaTeX\TeX\LaTeX\lelists.sty
 TeX:STY
 269496306 1 86 17 86 26 182 182 1248 613 1 0 246 240 -1 -1 0 0 14 0 0 14 1 0 26 86  0 0 0
-:\Users\Lance\AppData\Roaming\WinEdt Team\WinEdt 11\ConfigEx\Toolbar.ini
-DATA:INI:EDT
-269485050 0 382 8 386 3 104 104 1124 588 1 1 100 400 -1 -1 0 0 -1 -1 -1 -1 1 0 3 386  0 -1 0
-:\Users\Lance\AppData\Roaming\WinEdt Team\WinEdt 11\ConfigEx\Preferences.ini
-DATA:INI:EDT
-269485050 0 0 1 62 24 52 52 1072 536 1 1 247 512 -1 -1 0 0 -1 -1 -1 -1 1 0 24 62  0 0 0
-F:\Program Files\WinEdt Team\WinEdt 11\Templates\LaTeX\Eq.ltx
-TeX
-269496315 0 -1 0 -1 31 182 182 1202 666 1 1 142 16 -1 -1 0 0 21 -1 -1 21 1 0 31 -1  0 -1 0
-F:\Program Files\WinEdt Team\WinEdt 11\Templates\LaTeX\Eql.ltx
-TeX
-269496315 0 -1 20 -1 30 208 208 1228 692 1 1 142 16 -1 -1 0 0 22 -1 -1 22 1 0 30 -1  0 -1 0
-F:\Program Files\WinEdt Team\WinEdt 11\Templates\LaTeX\Figure.ltx
-TeX
-269496315 0 -1 0 -1 104 156 156 1176 640 1 1 198 80 -1 -1 0 0 -1 -1 -1 -1 1 0 104 -1  0 -1 0
-:\Users\Lance\AppData\Roaming\WinEdt Team\WinEdt 11\ConfigEx\MainMenu.ini
-DATA:INI:EDT
-269485050 0 4199 20 4181 70 78 78 1098 562 1 1 569 448 -1 -1 0 0 -1 -1 -1 -1 1 0 70 4181  0 -1 0
 :\Custom Program Files\LaTeX\TeX\LaTeX\legraphicextensions.sty
 TeX:STY
 269496307 1 2 18 2 37 26 26 1092 457 1 0 323 32 -1 -1 0 0 -1 -1 -1 -1 1 0 37 2  0 0 0
