@@ -9,7 +9,7 @@
     \usepackage{lefontsizes}
     \usepackage{lecode}
     \codefontsize{\small}
-    
+
     \usepackage{legraphicextensions}
     \graphicspath{{Figures/}}
 
@@ -248,5 +248,23 @@ Delete the \textcode{Ctrl+Tab} shortcut from the \textcode{ITEM="Next\_MDI\_Wind
     	\item \textcode{Options$\rightarrow$Preferences$\rightarrow$Tabs}
     	\item Check \textit{Allow Keyboard Tabs}
     \end{numberedlist}
+
+
+	\section{Keywords and Syntax Highlighting}
+	\begin{numberedlist}
+		\item Expand the \textit{Highlighting:...} menu from the \textit{Options Interface} panel.
+        \item Open the \textit{Keywords.ini} file.
+        \item Find the \textcode{KEYWORD\_GROUP="BibTeX Fields"} line.
+        \item Add the items below into the list.
+        \item Right click on the \textit{Keywords} node and select \textit{Load Script}.
+	\end{numberedlist}
+	\begin{plainlist}
+        \item \textcode{abstract}
+        \item \textcode{affiliation}
+        \item \textcode{day}
+        \item \textcode{id}
+        \item \textcode{logline}
+        \item \textcode{speid}
+	\end{plainlist}
 
 	\end{document} 
