@@ -4,19 +4,25 @@
 1
 1
 WinEdt Installation Notes.tex
-5
-3
+7
+4
 0
 
 WinEdt Installation Notes.tex
 TeX
-420491195 0 -1 10332 -1 10333 0 0 1319 583 0 1 219 496 -1 0 0 255 0 -1 -1 2 1 0 10333 -1  0 -1 0
+420491195 0 -1 10283 -1 10506 0 0 1319 583 0 1 37 512 -1 0 0 255 0 -1 -1 2 1 0 10506 -1  0 -1 0
+:\Users\lance.endres\AppData\Roaming\WinEdt Team\WinEdt 11\ConfigEx\Dictionaries.ini
+DATA:INI:EDT
+1049594 1 16 3 16 60 104 104 1148 545 1 1 499 256 -1 -1 0 0 83 0 0 83 1 0 60 16  0 -1 0
 :\Custom Program Files\LaTeX\TeX\LaTeX\lecode.sty
 TeX:STY
-1060850 1 14 13 14 26 0 0 1066 431 1 0 246 224 -1 -1 0 0 25 0 0 25 1 0 26 14  0 0 0
+1060850 0 14 13 52 26 0 0 1066 431 1 0 246 224 -1 -1 0 0 25 0 0 25 1 0 26 52  0 0 0
 :\Custom Program Files\LaTeX\TeX\LaTeX\lefontsizes.sty
 TeX:STY
 1060850 0 15 25 15 21 78 78 1098 562 1 0 211 240 -1 -1 0 0 25 0 0 25 1 0 21 15  0 0 0
+:\Users\lance.endres\AppData\Roaming\WinEdt Team\WinEdt 11\Dict\User.dic
+DATA:DIC:UNIX
+273776882 0 0 1 0 1 78 78 1122 519 1 0 71 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
 :\Custom Program Files\LaTeX\TeX\LaTeX\lelists.sty
 TeX:STY
 269496306 1 86 17 86 26 182 182 1248 613 1 0 246 240 -1 -1 0 0 14 0 0 14 1 0 26 86  0 0 0
