@@ -13,6 +13,8 @@
 \usepackage{legraphicextensions}
 \graphicspath{{Figures/}}
 
+\usepackage{lemarkup}
+
 \usepackage{lesubscripts}
 \usepackage[pdfauthor={Lance A. Endres}, pdftitle={WinEdt Installation Notes, colorlinks}]{lehyperlink}
 \usepackage{leheadersandfooters}
@@ -316,5 +318,27 @@ Follow the procedure similar to above, but search for the \textcode{KEYWORD\_GRO
 \begin{plainlist}
 	\item \textcode{WEBHREF}
 \end{plainlist}
+
+\section{Paragraph and Wrapping}
+\begin{numberedlist}
+	\item Expand the \textit{Formatting: Wrapping...} menu from the \textit{Options Interface} panel.
+	\item Open the \textit{Paragraphs} file.
+	\item Find the \textcode{[PARAGRAPHS]} line.
+	\item Find and edit the groups below.
+	\item Right click on the \textit{Formatting: Wrapping...} node and select \textit{Load Script}.
+\end{numberedlist}
+\begin{code}[\codenumbering]{}
+	\codeitemnonumber PARAGRAPH="	" // Tab (not a space!)
+	\stepcodelevel{}
+	\codeitemnonumber MODE\_FILTER="*"
+	\codeitemnonumber \warning{ALLOW\_SOFT\_WRAP=1}
+	\codeitemnonumber CASE\_SENSITIVE=1
+	\codeitemnonumber OFFSET=1
+	\codeitemnonumber \warning{OFFSET\_BY=4}
+	\prevcodelevel{}
+\end{code}
+%  ALLOW_SOFT_WRAP=0
+%  OFFSET_BY=0
+
 
 \end{document} 
