@@ -1,24 +1,31 @@
+% COMMANDS
+\newcommand*{\winedt}{\emph{WinEdt}}
+\newcommand*{\powertoys}{\emph{PowerToys}}
+
+% LISTS
 \usepackage{lelists}
 \setlength{\listtopsep}{0pt}
 \setlength{\leftlistindent}{0pt}
 \setlength{\rightlistindent}{0pt}
+\setlength{\outlinemainitemparsep}{\parsep}
 
+% FONTS
 \usepackage{lefonts}
 \usepackage{lefontsizes}
 \usepackage{lecode}
 \codefontsize{\small}
+\usepackage{times}
 
+% GRAPHICS
 \usepackage{legraphicextensions}
 \graphicspath{{Figures/}}
 
+% NOTES
 \usepackage{lemarkup}
 
-\usepackage{lesubscripts}
-\usepackage[pdfauthor={Lance A. Endres}, pdftitle={WinEdt Installation Notes, colorlinks}]{lehyperlink}
+% HYPERLINKS
+\usepackage[pdfauthor={Lance A. Endres}, pdftitle={WinEdt Installation Notes}, lecolorlinks]{lehyperlink}
+
+% HEADERS AND FOOTERS
 \usepackage{leheadersandfooters}
-
-\usepackage{leaddress}
-
-\usepackage{times}
-
-\pagestyle{leplainheader}
+\pagestyle{leplainheader} 

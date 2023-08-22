@@ -4,14 +4,14 @@ In version 10 and above the procedure has changed.  Every thing is accessed thro
 \begin{figure}
 	\centering
 	\includegraphics[width=3.25in]{openingoptionsinterface}
-	\caption{Opening the \textit{Options Interface} panel.}
+	\caption[Opening the \textit{Options Interface} panel]{Opening the \textit{Options Interface} panel.}
 	\label{fig:openingoptionsinterface}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=2.25in]{optionsinterface}
-	\caption{The \textit{Options Interface} panel.}
+	\caption[The \textit{Options Interface} panel]{The \textit{Options Interface} panel.}
 	\label{fig:optionsinterface}
 \end{figure}
 
@@ -74,7 +74,7 @@ In version 10 and above the procedure has changed.  Every thing is accessed thro
 \begin{figure}
 	\centering
 	\includegraphics[width=2.25in]{texmenu}
-	\caption{The \textit{TeX} menu with added items.}
+	\caption[The \textit{TeX} menu with added items]{The \textit{TeX} menu with added items.}
 	\label{fig:texmenu}
 \end{figure}
 
@@ -126,19 +126,32 @@ Save the file, right click on the \emph{Toolbar} node, and click \emph{Load Scri
 \begin{figure}
 	\centering
 	\includegraphics[width=2.5in]{additionalpreferences}
-	\caption{The location of \textcode{Additional Preferences} on the \textit{Options Interface} panel.}
+	\caption[The location of \textcode{Additional Preferences} on the \textit{Options Interface} panel]{The location of \textcode{Additional Preferences} on the \textit{Options Interface} panel.}
 	\label{fig:additionalpreferences}
 \end{figure}
 
 
 \section{Keyboard Shortcuts}
-For some keyboard shortcuts, Windows intercepts them and they do not reach WinEdt.  This is because WinEdt uses the MDI interface.  To remap toggling of tabs, download and install \textcode{PowerToys}.
-\begin{plainlist}
-	\item \href{https://github.com/microsoft/PowerToys}{PowerToys on Github}
-\end{plainlist}
-
-Add a keyboard shortcut to remap \textcode{Ctrl+Tab} to \textcode{Shift+F2} for \textcode{WinEdt}
-Delete the \textcode{Ctrl+Tab} shortcut from the \textcode{ITEM="Next\_MDI\_Window"} entry.
+For some keyboard shortcuts, Windows intercepts them and they do not reach \winedt{}.  This is because \winedt{} uses the MDI interface.  To remap toggling of tabs, download and install \powertoys{} (\href{https://github.com/microsoft/PowerToys}{PowerToys on Github})
+\begin{outline}
+	\item Add the keyboard short cut to \emph{PowerToys}.
+	\begin{outline}
+		\item Open \textcode{PowerToys} and go to \emph{Keyboard Manager}$\rightarrow$\emph{Remap a shortcut}
+		\item Add a keyboard shortcut to remap \textcode{Ctrl+Tab} to \textcode{Shift+F2} for \winedt{}
+	\end{outline}
+	\item Remove the short cut from \winedt{}.
+	\begin{outline}
+		\item Select the \textcode{Main Menu} section of the \textcode{Menu and Toolbar...} as shown in \figurename~\ref{fig:optionsinterface}.
+		\item Search for the \textcode{ITEM="Next\_MDI\_Window"} entry.
+		\item Delete the \textcode{Ctrl+Tab} from the \textcode{SHORTCUT="Ctrl+Tab"} line.
+	\end{outline}
+\end{outline}
+\begin{figure}
+	\centering
+	\includegraphics[width=2.5in]{powertoyssettings}
+	\caption[The \powertoys{} keyboard remapping]{The \powertoys{} keyboard remapping.}
+	\label{fig:powertoyssettings}
+\end{figure}
 
 \section{Tabs}
    \begin{numberedlist}
@@ -212,4 +225,4 @@ Follow the procedure similar to above, but search for the \textcode{KEYWORD\_GRO
 	\prevcodelevel{}
 \end{code}
 %  ALLOW_SOFT_WRAP=0
-%  OFFSET_BY=0
+%  OFFSET_BY=0 
