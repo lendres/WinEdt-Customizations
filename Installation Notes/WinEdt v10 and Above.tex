@@ -1,5 +1,6 @@
 \chapter{WinEdt v10 and Above}
-\section{Options Interface}
+\section{}
+\subsection{Options Interface}
 In version 10 and above the procedure has changed.  Every thing is accessed through the \textit{Options Interface}.  Right click on the toolbar and select the button for it (see \figurename~\ref{fig:openingoptionsinterface}).  The \textit{Options Interface} is shown in \figurename~\ref{fig:optionsinterface}.
 \begin{figure}
 	\centering
@@ -16,13 +17,14 @@ In version 10 and above the procedure has changed.  Every thing is accessed thro
 \end{figure}
 
 
-\section{Add Menu Items}
+\section{Menu Items}
+\subsection{Add Custom Commands to TeX Menu}
 \label{sec:addmenuitems}
 \begin{numberedlist}
 	\item Open the \textit{Main Menu} document from the \textit{Options Interface} panel.  This will be called \emph{File 1}.
 	\item Find the section: \textcode{MENU="TeX\_Menu"}.
 	\item Find the end of the \textcode{ITEM="TeXify"} menu item.  The entries will be added after this item, i.e., after the \textcode{REQ\_FILTER...} line.
-	\item Open the file \textcode{.\\src V10 and Above\\MainMenu.ini} that is included in this repository.  This will be \emph{File 2}.  The contents look like the code below.
+	\item Open the file \textcode{.\tbs{}src V10 and Above\tbs{}MainMenu.ini} that is included in this repository.  This will be \emph{File 2}.  The contents look like the code below.
 	\item Copy the contents from the \emph{File 2} into the specified location of \emph{File 1}.
 	\item Save the file.
 	\item Right click on the \emph{Main Menu} node in the \emph{Options Interface} and click \emph{Load Script}.
@@ -77,6 +79,28 @@ In version 10 and above the procedure has changed.  Every thing is accessed thro
 	\caption[The \textit{TeX} menu with added items]{The \textit{TeX} menu with added items.}
 	\label{fig:texmenu}
 \end{figure}
+
+\subsection{Change Shortcut Keys to Existing Commands}
+Find the two menu items below and change the short cut keys to match the ones below in red.
+
+\begin{code}[\codenumbering]{}
+	\codeitemnonumber ITEM="Close"
+	    \stepcodelevel{}
+	    \codeitemnonumber CAPTION="\&Close"
+	    \codeitemnonumber IMAGE="Close"
+	    \codeitemnonumber MACRO="CloseDoc;"
+	    \codeitemnonumber \warning{SHORTCUT="16471::Ctrl+W"}
+	    \codeitemnonumber REQ\_DOCUMENT=1
+\end{code}
+
+\begin{code}[\codenumbering]{}
+	\codeitemnonumber ITEM="\$Toggle\_Wrap/NoWrap"
+		\stepcodelevel{}
+	    \codeitemnonumber CAPTION="Toggle Wrap/NoWrap"
+	    \codeitemnonumber MACRO="SetWrap;"
+	    \codeitemnonumber \warning{SHORTCUT="16499::Ctrl+F4"}
+	    \codeitemnonumber REQ\_DOCUMENT=1
+\end{code}
 
 \section{Add Toolbar Buttons}
 To add toolbar buttons, start by opening the \emph{Toolbar.ini} file.  Right click on the \emph{Toolbar} node (see \figurename~\ref{fig:optionsinterface}) and select \emph{Open} or double click the node.
@@ -166,7 +190,7 @@ For some keyboard shortcuts, Windows intercepts them and they do not reach \wine
 	\item Find the \textcode{DICTIONARY="User (Addon)"} line.
 	\item Edit the \textcode{FILE} line to point to use dictionary in the custom program files directory, e.g.:
 	\begin{plainlist}
-		\item FILE="C:\tbs{}Custom Program Files\tbs{}WinEdt\tbs{}Dictionary\tbs{}User.dic"
+		\item \textcode{FILE="C:\tbs{}Custom Program Files\tbs{}WinEdt\tbs{}Dictionary\tbs{}User.dic"}
 	\end{plainlist}
 \end{numberedlist}
 
@@ -180,8 +204,8 @@ For some keyboard shortcuts, Windows intercepts them and they do not reach \wine
 	\item Right click on the \textit{Keywords} node and select \textit{Load Script}.
 \end{numberedlist}
 \begin{plainlist}
-	\item \textcode{abstract}
-	\item \textcode{affiliation}
+%	\item \textcode{abstract}
+%	\item \textcode{affiliation}
 	\item \textcode{assignee}
 	\item \textcode{day}
 	\item \textcode{filedday}
