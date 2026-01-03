@@ -23,7 +23,7 @@ In version 10 and above the procedure has changed.  Every thing is accessed thro
 \begin{numberedlist}
 	\item Open the \textit{Main Menu} document from the \textit{Options Interface} panel.  This will be called \emph{File 1}.
 	\item Find the section: \textcode{MENU="TeX\_Menu"}.
-	\item Find the end of the \textcode{ITEM="TeXify"} menu item.  The entries will be added after this item, i.e., after the \textcode{REQ\_FILTER...} line.
+	\item Find the location to put the new menu items.  That is after the end of the \textcode{ITEM="TeXify"} or the end of the \textcode{ITEM="XeLaTeX"} menu items.  The new entries will be added after the item, i.e., after the \textcode{REQ\_FILTER...} line.
 	\item Open the file \textcode{.\tbs{}src V10 and Above\tbs{}MainMenu.ini} that is included in this repository.  This will be \emph{File 2}.  The contents look like the code below.
 	\item Copy the contents from the \emph{File 2} into the specified location of \emph{File 1}.
 	\item Save the file.
@@ -150,7 +150,7 @@ Save the file, right click on the \emph{Toolbar} node, and click \emph{Load Scri
 \begin{figure}
 	\centering
 	\includegraphics[width=2.5in]{additionalpreferences}
-	\caption[The location of \textcode{Additional Preferences} on the \textit{Options Interface} panel]{The location of \textcode{Additional Preferences} on the \textit{Options Interface} panel.}
+	\caption[The location of \textcode{Additional Preferences} on the \textit{Options Interface} panel]{The location of \textcode{Additional Preferences} on the \textit{Options Interface} panel.  Form \emph{WinEdt 11} the \emph{Application:} prefix is not used.}
 	\label{fig:additionalpreferences}
 \end{figure}
 
