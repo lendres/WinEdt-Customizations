@@ -21,7 +21,7 @@ In version 10 and above the procedure has changed.  Every thing is accessed thro
 \subsection{Add Custom Commands to TeX Menu}
 \label{sec:addmenuitems}
 \begin{numberedlist}
-	\item Open the \textit{Main Menu} document from the \textit{Options Interface} panel.  This will be called \emph{File 1}.
+	\item Open the \textit{Main Menu} document from the \textit{Options Interface} panel (\textcode{Menus and Toolbar$\rightarrow{}$Main Menu}).  This will be called \emph{File 1}.
 	\item Find the section: \textcode{MENU="TeX\_Menu"}.
 	\item Find the location to put the new menu items.  That is after the end of the \textcode{ITEM="TeXify"} or the end of the \textcode{ITEM="XeLaTeX"} menu items.  The new entries will be added after the item, i.e., after the \textcode{REQ\_FILTER...} line.
 	\item Open the file \textcode{.\tbs{}src V10 and Above\tbs{}MainMenu.ini} that is included in this repository.  This will be \emph{File 2}.  The contents look like the code below.
@@ -84,13 +84,30 @@ In version 10 and above the procedure has changed.  Every thing is accessed thro
 Find the two menu items below and change the short cut keys to match the ones below in red.
 
 \begin{code}[\codenumbering]{}
+	\codeitemnonumber ITEM="Build\_Tree"
+	    \stepcodelevel{}
+		\codeitemnonumber ...
+		\codeitemnonumber \warning{SHORTCUT="120::F9"}
+\end{code}
+
+\begin{code}[\codenumbering]{}
+	\codeitemnonumber MENU="\&Tools"
+	    \stepcodelevel{}
+		\codeitemnonumber ITEM="Compile"
+		\codeitemnonumber ...
+		\codeitemnonumber \warning{SHORTCUT="116::F5"}
+\end{code}
+
+
+\begin{code}[\codenumbering]{}
 	\codeitemnonumber ITEM="Close"
 	    \stepcodelevel{}
 	    \codeitemnonumber CAPTION="\&Close"
-	    \codeitemnonumber IMAGE="Close"
-	    \codeitemnonumber MACRO="CloseDoc;"
+		\codeitemnonumber ...
+	    %\codeitemnonumber IMAGE="Close"
+	    %\codeitemnonumber MACRO="CloseDoc;"
 	    \codeitemnonumber \warning{SHORTCUT="16471::Ctrl+W"}
-	    \codeitemnonumber REQ\_DOCUMENT=1
+	    %\codeitemnonumber REQ\_DOCUMENT=1
 \end{code}
 
 \begin{code}[\codenumbering]{}
@@ -99,7 +116,7 @@ Find the two menu items below and change the short cut keys to match the ones be
 	    \codeitemnonumber CAPTION="Toggle Wrap/NoWrap"
 	    \codeitemnonumber MACRO="SetWrap;"
 	    \codeitemnonumber \warning{SHORTCUT="16499::Ctrl+F4"}
-	    \codeitemnonumber REQ\_DOCUMENT=1
+	    %\codeitemnonumber REQ\_DOCUMENT=1
 \end{code}
 
 \section{Add Toolbar Buttons}
