@@ -1,0 +1,4 @@
+interface:
+  display_name: "WinEdt Setup"
+  short_description: "Restore Lance's WinEdt configuration and shortcuts"
+  default_prompt: "Use $winedt-setup to apply and verify my WinEdt custom setup."

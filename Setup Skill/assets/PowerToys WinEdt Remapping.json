@@ -1,0 +1,18 @@
+{
+  "remapKeys": {"inProcess": []},
+  "remapKeysToText": {"inProcess": []},
+  "remapShortcuts": {
+    "global": [],
+    "appSpecific": [
+      {
+        "originalKeys": "17;9",
+        "newRemapKeys": "16;113",
+        "targetApp": "winedt.exe",
+        "secondKeyOfChord": 0,
+        "operationType": 0,
+        "exactMatch": true
+      }
+    ]
+  },
+  "remapShortcutsToText": {"global": [], "appSpecific": []}
+}

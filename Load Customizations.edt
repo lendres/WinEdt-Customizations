@@ -1,0 +1,8 @@
+LoadConfig("C:\Users\lance.endres.CNPCUSA\AppData\Roaming\WinEdt Team\WinEdt 11\ConfigEx\MainMenu.ini");
+LoadConfig("C:\Users\lance.endres.CNPCUSA\AppData\Roaming\WinEdt Team\WinEdt 11\ConfigEx\Toolbar.ini");
+LoadConfig("C:\Users\lance.endres.CNPCUSA\AppData\Roaming\WinEdt Team\WinEdt 11\ConfigEx\Preferences.ini");
+LoadConfig("C:\Users\lance.endres.CNPCUSA\AppData\Roaming\WinEdt Team\WinEdt 11\ConfigEx\Tabs.ini");
+LoadConfig("C:\Users\lance.endres.CNPCUSA\AppData\Roaming\WinEdt Team\WinEdt 11\ConfigEx\Dictionaries.ini");
+LoadConfig("C:\Users\lance.endres.CNPCUSA\AppData\Roaming\WinEdt Team\WinEdt 11\ConfigEx\Keywords.ini");
+LoadConfig("C:\Users\lance.endres.CNPCUSA\AppData\Roaming\WinEdt Team\WinEdt 11\ConfigEx\Paragraphs.ini");
+SaveSettings;
